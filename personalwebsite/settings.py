@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'blog.apps.BlogConfig',
     'tutorials.apps.TutorialsConfig',
+    'users.apps.UsersConfig',
+    'crispy_forms',
     # builtins
     'django.contrib.admin',
     'django.contrib.auth',
@@ -128,3 +130,5 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

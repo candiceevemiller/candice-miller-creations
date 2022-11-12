@@ -21,7 +21,7 @@
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     
-    
+
     {% if title %}
       <title>Candice Miller Creations - {{ title }}</title>
     {% else %}
@@ -48,7 +48,13 @@
     </header>
     <main role="main" class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
+          {% if messages %}
+            {% for message in messages %}
+              <div class="alert-{{ message.tags }}"></div>
+              {{ message }}
+            {% endfor %}
+          {% endif %}
           {% block content %}{% endblock %}
         </div>
       </div>

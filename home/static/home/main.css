@@ -1,13 +1,39 @@
+/* CSS HEX */
+:root {
+    /* Def Colors */
+    --paradise-pink: #ee4266ff;
+    --silver-sand: #c4cbcaff;
+    --tiffany-blue: #3cbbb1ff;
+    --star-command-blue: #2176aeff;
+    --dark-purple: #1f122eff;
+    /* Def Vars */
+    --background-color: var(--dark-purple);
+    --header-color: var(--star-command-blue);
+    --text-light: var(--silver-sand);
+}
+
 html {
     height: 100%;
 }
 
 body {
     height: 100%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .full-page {
     height: 100%;
     width: 100%;
+}
+
+.main-header {
+    color: var(--header-color);
+}
+
+.bg-dark {
+    background-color: var(--background-color)!important;
+}
+
+.text-light {
+    color: var(--text-light)!important;
 }

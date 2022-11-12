@@ -7,5 +7,5 @@ def index(request):
 def projects(request):
     return render(request, 'home/projects.html')
 
-def resume(request):
+def about(request):
     return render(request, 'home/resume.html')

@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # my apps
     'home.apps.HomeConfig',
+    'blog.apps.BlogConfig',
+    'tutorials.apps.TutorialsConfig',
     # builtins
     'django.contrib.admin',
     'django.contrib.auth',
@@ -108,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/New_York'
 
 USE_I18N = True
 

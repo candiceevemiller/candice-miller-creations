@@ -1,4 +1,12 @@
-{% extends "home/base.html" %}
+{% extends "blog/base.html" %}
+
 {% block content %}
-    <h1>Proof</h1>
+    {% for post in posts %}
+    <div class="card container mb-3">
+        <h1 class="mb-1">{{ post.title }}</h1>
+        <hr class="m-0">
+        <p>By {{ post.author }} on {{ post.date_posted|date:"F d, Y" }}</p>
+        <p>{{ post.content }}</p>
+    </div>
+    {% endfor %}
 {% endblock content %}

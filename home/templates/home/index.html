@@ -1,31 +1,17 @@
 {% extends "home/base.html" %}
 {% block content %}
-    <div class="h-100 d-flex align-items-center justify-content-center">
-        <div>
-            <h1 class="text-light">Candice Miller Creations</h1>
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home' %}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'resume' %}">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'blog-home' %}">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/candice-eve-miller/">LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
-          </nav>
-          <!-- end navbar -->
-        </div>
-    </div>
+<div class="container mt-5">
+    <p class="text-light m-0"><strong>guest@candice-miller-creations:~$</strong> ./candice-miller-creations.sh</p>
+    <p class="text-light m-0">##### -\|/- displaying navigation -\|/- #####</p>
+    <p class="text-light m-0">candice-miller-creations/</p>
+    <p class="text-light m-0">├─ shortcuts/</p>
+    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="{% url 'home' %}">│  ├─ home/</a></p>
+    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="{% url 'about' %}">│  ├─ about/</a></p>
+    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="{% url 'projects' %}">│  ├─ projects/</a></p>
+    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="{% url 'blog-home' %}">│  ├─ blog/</a></p>
+    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="{% url 'tutorials-home' %}">│  ├─ tutorials/</a></p>
+    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="{% url 'contact'}">│  ├─ contact/</a></p>
+    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="https://www.linkedin.com/in/candice-eve-miller/">│  ├─ linkedin/</a></p>
+    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="https://www.github.com/candiceevemiller">│  ├─ github/</a></p>
+</div>
 {% endblock content %}

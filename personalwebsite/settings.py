@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # my apps
+    'rest_framework',
+    'corsheaders',
     'home.apps.HomeConfig',
     'blog.apps.BlogConfig',
     'tutorials.apps.TutorialsConfig',
@@ -47,6 +49,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    # my apps
+    'corsheaders.middleware.CorsMiddleware',
+    # default apps
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -132,3 +137,5 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+CORS_ALLOW_ORIGIN_ALL = True

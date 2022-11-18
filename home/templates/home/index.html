@@ -1,17 +1,23 @@
 {% extends "home/base.html" %}
 {% block content %}
-<div class="container m-0 mt-3">
-    <p class="text-light m-0"><strong>guest@candice-miller-creations:~$</strong> ./candice-miller-creations.sh</p>
-    <p class="text-light m-0">##### -\|/- displaying navigation -\|/- #####</p>
-    <p class="text-light m-0">candice-miller-creations/</p>
-    <p class="text-light m-0">├─ shortcuts/</p>
-    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="{% url 'home' %}">│  ├─ home/</a></p>
-    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="{% url 'about' %}">│  ├─ about/</a></p>
-    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="{% url 'projects' %}">│  ├─ projects/</a></p>
-    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="{% url 'blog-home' %}">│  ├─ blog/</a></p>
-    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="{% url 'tutorials-home' %}">│  ├─ tutorials/</a></p>
-    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="{% url 'contact'}">│  ├─ contact/</a></p>
-    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="https://www.linkedin.com/in/candice-eve-miller/">│  ├─ linkedin/</a></p>
-    <p class="text-light m-0"><a class="nav-link text-light m-0 p-0" href="https://www.github.com/candiceevemiller">│  ├─ github/</a></p>
+{% load static %}
+    <div id="screen">
+        <img id="scan" class="noselect" src="{% static 'home/scanlines.png' %}" alt="scanlines">
+        <img id="bezel" class="noselect" src="{% static 'home/bezel.png' %}" alt="bezel">
+        <div class="container" id="content">
+            <p class="text-terminal m-0">guest@candice-miller-creations:~$ ./candice-miller-creations.sh</p>
+            <p class="text-terminal m-0">##### -\|/- displaying navigation -\|/- #####</p>
+            <p class="text-terminal m-0">candice-miller-creations/</p>
+            <p class="text-terminal m-0">├─ shortcuts/</p>
+            <p class="text-terminal m-0"><a class="nav-link text-terminal m-0 p-0" href="{% url 'home' %}">│  ├─ home/</a></p>
+            <p class="text-terminal m-0"><a class="nav-link text-terminal m-0 p-0" href="{% url 'about' %}">│  ├─ about/</a></p>
+            <p class="text-terminal m-0"><a class="nav-link text-terminal m-0 p-0" href="{% url 'projects' %}">│  ├─ projects/</a></p>
+            <p class="text-terminal m-0"><a class="nav-link text-terminal m-0 p-0" href="{% url 'blog-home' %}">│  ├─ blog/</a></p>
+            <p class="text-terminal m-0"><a class="nav-link text-terminal m-0 p-0" href="{% url 'tutorials-home' %}">│  ├─ tutorials/</a></p>
+            <p class="text-terminal m-0"><a class="nav-link text-terminal m-0 p-0" href="{% url 'contact'}">│  ├─ contact/</a></p>
+            <p class="text-terminal m-0"><a class="nav-link text-terminal m-0 p-0" href="https://www.linkedin.com/in/candice-eve-miller/">│  ├─ linkedin/</a></p>
+            <p class="text-terminal m-0"><a class="nav-link text-terminal m-0 p-0" href="https://www.github.com/candiceevemiller">│  ├─ github/</a></p>
+
+    </div>
 </div>
 {% endblock content %}
